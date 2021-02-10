@@ -8,7 +8,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 
-@Singleton
+
 public class MediaTek implements Processor {
     int clockSpeed;
     int core;

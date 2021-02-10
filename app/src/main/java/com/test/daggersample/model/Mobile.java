@@ -17,7 +17,7 @@ public class Mobile {
         this.battery = battery;
         this.processor = processor;
         this.camera = camera;
-        Log.d(MainActivity.TAG, "Mobile: battery "+battery.toString()+"  "+processor.toString()+"  "+this.toString());
+        Log.d("sssssssssssss", "Mobile: battery "+battery.toString()+"  "+processor.toString()+"  "+this.toString());
     }
 
     public void run(){

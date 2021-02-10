@@ -3,6 +3,7 @@ package com.test.daggersample.modules;
 import com.test.daggersample.model.Battery;
 import com.test.daggersample.model.Cobalt;
 import com.test.daggersample.model.Lithium;
+import com.test.daggersample.scopes.ActivityScope;
 
 import javax.inject.Singleton;
 
@@ -24,7 +25,7 @@ public class BatteryModule {
         return lithium;
     }
 
-    @Singleton
+    @ActivityScope
     @Provides
     Battery getBattery(Cobalt cobalt, Lithium lithium){
         return new Battery(cobalt, lithium);
